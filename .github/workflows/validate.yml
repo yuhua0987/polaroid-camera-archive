@@ -1,0 +1,28 @@
+name: Validate catalog and gallery
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.13'
+      - name: Validate licenses, source references and image integrity
+        run: python3 tools/validate.py
+      - name: Check generated documentation
+        run: |
+          python3 tools/update_docs.py
+          git diff --exit-code -- docs/COVERAGE.md docs/ATTRIBUTION.md
+      - name: Build static gallery
+        run: python3 tools/build.py
+      - name: Validate built output and committed offline page
+        run: python3 tools/validate.py --site dist
+      - name: Check JavaScript syntax
+        run: node --check web/app.js

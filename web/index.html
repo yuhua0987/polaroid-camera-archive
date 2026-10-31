@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="宝丽来历代相机开放资料目录。按系列、型号与视角浏览，逐图保留来源与许可。">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="data:,">
+  <title>Polaroid Camera Archive · 宝丽来历代相机目录</title>
+  <style>__STYLE__</style>
+</head>
+<body>
+<header><div class="rainbow"></div><div class="top">
+  <div class="brand">POLAROID / 宝丽来<small>INDEPENDENT CAMERA REFERENCE ARCHIVE</small></div>
+  <nav class="links" aria-label="项目资料">
+    <a href="https://github.com/yuhua0987/polaroid-camera-archive">GitHub ↗</a>
+    <a href="docs/COVERAGE.md">型号与视角清单 ↗</a>
+    <a href="docs/ATTRIBUTION.md">图片署名与许可 ↗</a>
+  </nav>
+</div></header>
+<section class="hero">
+  <div><div class="eyebrow">1948 — 2026 · 历代即影即有相机</div>
+    <h1>从一张即影即有，<br>看见相机的演变。</h1>
+    <p class="intro">从卷片与撕拉片到 SX-70、600、Spectra 和 Go，按型号、地区铭牌与代际整理外观参考。每张图片都保留作者、来源及许可。</p>
+    <div class="stats" id="stats"></div>
+  </div>
+  <div class="featured" id="featured"></div>
+</section>
+<div class="scope" id="scope"></div>
+<main class="layout">
+  <aside class="side" id="families" aria-label="相机系列"></aside>
+  <section>
+    <div class="toolbar">
+      <input class="search" id="search" aria-label="搜索型号" placeholder="搜索 SX-70、SLR 680、Go 或型号编号…" type="search">
+      <select id="mode" aria-label="浏览模式">
+        <option value="models">按型号浏览</option>
+        <option value="photos">按视角看图</option>
+        <option value="gaps">正侧背视角待补</option>
+        <option value="missing">缺图型号</option>
+      </select>
+      <select id="angle" aria-label="筛选视角">
+        <option value="">全部视角</option><option value="front">正面 / 斜前方</option>
+        <option value="side">侧面</option><option value="back">背面 / 斜后方</option>
+        <option value="fold">收合状态</option><option value="other">未标注视角</option>
+      </select>
+      <select id="access" aria-label="图片范围">
+        <option value="all">全部参考记录</option><option value="bundled">含开放图片</option>
+        <option value="reference">来源链接</option>
+      </select>
+    </div>
+    <div class="resultline" role="status" aria-live="polite"><span id="resultcount"></span><span>资料截至 2026-10-31 · 点击查看全部视角与来源</span></div>
+    <div id="results"></div><div class="pagination" id="pagination"></div>
+  </section>
+</main>
+<dialog id="detail" aria-labelledby="detailtitle">
+  <div class="modalhead"><div><span class="eyebrow" id="detailfamily"></span><h2 id="detailtitle"></h2><p id="detailnote"></p></div><button class="close" id="close" aria-label="关闭">×</button></div>
+  <div class="modalbody"><div class="stage" id="stage"></div><aside class="metapanel" id="meta"></aside></div>
+  <div class="thumbs" id="thumbs" aria-label="全部图片参考"></div>
+</dialog>
+<footer class="foot">独立爱好者资料项目，与 Polaroid 官方无隶属关系。型号条目包含地区铭牌、代际与命名版本，不等于独立机身设计数量。<br>
+开放图片遵循各自许可；其他图像仅提供来源链接。斜前方、斜后方和收合状态按记录区分，三个视角并未全部配齐。
+<a href="NOTICE.md">许可说明</a> · <a href="data/catalog.json">下载型号与来源数据</a> · <a href="https://github.com/yuhua0987/polaroid-camera-archive/issues">提交勘误</a></footer>
+<noscript><p id="noscript">请启用 JavaScript，或查看 <a href="docs/COVERAGE.md">型号清单</a>与<a href="docs/ATTRIBUTION.md">图片署名</a>。</p></noscript>
+<script id="data" type="application/json">__DATA__</script>
+<script>__APP__</script>
+</body></html>
