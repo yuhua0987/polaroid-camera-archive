@@ -3,7 +3,7 @@
 An independent, source-linked catalog of historical Polaroid instant cameras,
 maintained by [yuhua0987](https://github.com/yuhua0987).
 
-[中文说明](README.md) · [All photo sources](docs/PHOTO_SOURCES.md) · [Model coverage](docs/COVERAGE.md) · [Image credits](docs/ATTRIBUTION.md)
+[Online gallery](https://yuhua0987.github.io/polaroid-camera-archive/) · [中文说明](README.md) · [All photo sources](docs/PHOTO_SOURCES.md) · [Model coverage](docs/COVERAGE.md) · [Image credits](docs/ATTRIBUTION.md)
 
 The 2026-10-31 snapshot contains **378 catalog names / versions across 16 families**,
 **1,211 photo references** covering **1,210 distinct images**, and **155 bundled,
@@ -16,7 +16,10 @@ The static viewer supports family/name search, view filtering, missing-view
 lists, attribution details and keyboard photo navigation. Oblique views and
 folded state are recorded separately; full three-view coverage is incomplete.
 
-Download and extract the repository, then open **index.html**. All bundled images,
+Open the **[online gallery](https://yuhua0987.github.io/polaroid-camera-archive/)**
+without downloading or installing anything.
+
+For offline use, download and extract the repository, then open **index.html**. All bundled images,
 catalog data and viewer code work offline. Other records provide source-page
 links only; the viewer does not hotlink those images.
 

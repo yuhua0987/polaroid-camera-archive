@@ -2,7 +2,7 @@
 
 **宝丽来历代相机目录：型号、外观、多角度参考与逐图来源。**
 
-[English](README.en.md) · [浏览方式](#浏览) · [全部照片来源](docs/PHOTO_SOURCES.md) · [型号与视角清单](docs/COVERAGE.md) · [图片署名](docs/ATTRIBUTION.md) · [许可说明](NOTICE.md)
+[在线图鉴](https://yuhua0987.github.io/polaroid-camera-archive/) · [English](README.en.md) · [浏览方式](#浏览) · [全部照片来源](docs/PHOTO_SOURCES.md) · [型号与视角清单](docs/COVERAGE.md) · [图片署名](docs/ATTRIBUTION.md) · [许可说明](NOTICE.md)
 
 从 1948 年的卷片 Land 到 SX-70、600、Spectra、Go 与现代 i-Type，
 这个项目把相机名称、地区铭牌、代际和外观参考整理成可搜索的静态图鉴。
@@ -23,6 +23,8 @@
 378 是本目录的条目数，包含地区铭牌、代际与部分特别用途版本，不能等同于 378 种独立机身设计，也不是官方完整历史型号总数。
 
 ## 浏览
+
+直接打开 **[在线图鉴](https://yuhua0987.github.io/polaroid-camera-archive/)**，无需下载或安装。
 
 下载仓库 ZIP 并解压，双击根目录的 **`index.html`** 即可浏览。
 数据、界面和 155 张开放图片都在本地，基础浏览无需联网或安装依赖。
