@@ -2,7 +2,7 @@
 
 Each photograph and its preview retain the license below. Downloaded responses were not edited locally; previews were resized and composited onto white where needed. Source servers may have supplied resized versions. Public-domain records retain the source's stated status.
 
-**151 images.** License metadata was captured on 2026-10-31. Original file pages include further attribution information.
+**155 images.** License capture dates are recorded per image in the media manifest. Original file pages include further attribution information.
 
 ## 018751a5096e4655
 
@@ -163,6 +163,16 @@ Each photograph and its preview retain the license below. Downloaded responses w
 - Source usage terms: Creative Commons Attribution 3.0
 - Changes: Downloaded response preserved; source may already be resized. Preview resized and composited onto white where needed.
 - SHA-256: `195ef0fd2580c81adc5d1ed84c04a76ea6c9819a73981d0798883ee197f6daee`
+
+## 1adcd4c1e9c9f283
+
+- Image: [Polaroid SX-70.jpg](../assets/media/1adcd4c1e9c9f28391801022333ecbaa14e5c643d7d3526327d4b96083a65037.jpg)
+- Author / attribution: en:User:Cburnett
+- Original file page: [https://commons.wikimedia.org/wiki/File:Polaroid_SX-70.jpg](https://commons.wikimedia.org/wiki/File:Polaroid_SX-70.jpg)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Source usage terms: Creative Commons Attribution-Share Alike 3.0
+- Changes: Downloaded response preserved; source may already be resized. Preview resized and composited onto white where needed.
+- SHA-256: `1adcd4c1e9c9f28391801022333ecbaa14e5c643d7d3526327d4b96083a65037`
 
 ## 1fa87d60efcc5166
 
@@ -1004,6 +1014,16 @@ Each photograph and its preview retain the license below. Downloaded responses w
 - Changes: Downloaded response preserved; source may already be resized. Preview resized and composited onto white where needed.
 - SHA-256: `a88f7b4aa342fa8525117135ecb6a12bc5e199f8e988aa9defde85a66295705f`
 
+## aa00b4c32b470187
+
+- Image: [Polaroid instant camera Sx70-8.jpg](../assets/media/aa00b4c32b4701872e1dd38b10fb282a2d9b58093c14292b3ba7c79b2d6546a6.jpg)
+- Author / attribution: Original uploader was Junkyard kahrs at en.wikipedia
+- Original file page: [https://commons.wikimedia.org/wiki/File:Polaroid_instant_camera_Sx70-8.jpg](https://commons.wikimedia.org/wiki/File:Polaroid_instant_camera_Sx70-8.jpg)
+- License: [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Source usage terms: Public domain
+- Changes: Downloaded response preserved; source may already be resized. Preview resized and composited onto white where needed.
+- SHA-256: `aa00b4c32b4701872e1dd38b10fb282a2d9b58093c14292b3ba7c79b2d6546a6`
+
 ## ae20eb5881d059a7
 
 - Image: [Polaroid Go - 2.jpg](../assets/media/ae20eb5881d059a7c7bfbfd1ee58d191c3f23d81a740ff40886943b1b7a3429d.jpg)
@@ -1073,6 +1093,16 @@ Each photograph and its preview retain the license below. Downloaded responses w
 - Source usage terms: Free Art License
 - Changes: Downloaded response preserved; source may already be resized. Preview resized and composited onto white where needed.
 - SHA-256: `be50555720de4033a5986c3f1851c02298645a338320da13ef1ddff14cdb2f75`
+
+## bf4cbd8f461ab03d
+
+- Image: [Polaroid SX-70 (4462345243).jpg](../assets/media/bf4cbd8f461ab03ded5a095c018b3f1e71d03eaeb8e7451936280c461b7b8325.jpg)
+- Author / attribution: Thomas Backa from Turku, Finland
+- Original file page: [https://commons.wikimedia.org/wiki/File:Polaroid_SX-70_(4462345243).jpg](https://commons.wikimedia.org/wiki/File:Polaroid_SX-70_(4462345243).jpg)
+- License: [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
+- Source usage terms: Creative Commons Zero, Public Domain Dedication
+- Changes: Downloaded response preserved; source may already be resized. Preview resized and composited onto white where needed.
+- SHA-256: `bf4cbd8f461ab03ded5a095c018b3f1e71d03eaeb8e7451936280c461b7b8325`
 
 ## c139dd914fb44e8e
 
@@ -1233,6 +1263,16 @@ Each photograph and its preview retain the license below. Downloaded responses w
 - Source usage terms: Creative Commons Attribution-Share Alike 4.0
 - Changes: Downloaded response preserved; source may already be resized. Preview resized and composited onto white where needed.
 - SHA-256: `dc8d525bc43cdd2aea7bcd0d9ac0ff51591e3a5b7a1e95319fb31190d8c19e37`
+
+## dcfa0ed67fab9485
+
+- Image: [Polaroid SX-70 Sonar One Step (4665242131).jpg](../assets/media/dcfa0ed67fab94853e4e69ecabb131c3e30fdcc357fa6c39d529772e651e11ca.jpg)
+- Author / attribution: Martin Taylor from San Francisco, CA, USA
+- Original file page: [https://commons.wikimedia.org/wiki/File:Polaroid_SX-70_Sonar_One_Step_(4665242131).jpg](https://commons.wikimedia.org/wiki/File:Polaroid_SX-70_Sonar_One_Step_(4665242131).jpg)
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- Source usage terms: Creative Commons Attribution 2.0
+- Changes: Downloaded response preserved; source may already be resized. Preview resized and composited onto white where needed.
+- SHA-256: `dcfa0ed67fab94853e4e69ecabb131c3e30fdcc357fa6c39d529772e651e11ca`
 
 ## df38df2a6994adf9
 

@@ -6,8 +6,8 @@ maintained by [yuhua0987](https://github.com/yuhua0987).
 [中文说明](README.md) · [Model coverage](docs/COVERAGE.md) · [Image credits](docs/ATTRIBUTION.md)
 
 The 2026-10-31 snapshot contains **378 catalog names / versions across 16 families**,
-**1,207 photo references** covering **1,206 distinct images**, and **151 bundled,
-openly licensed images** illustrating 57 entries. Another six entries have no
+**1,211 photo references** covering **1,210 distinct images**, and **155 bundled,
+openly licensed images** illustrating 60 entries. Another six entries have no
 verified camera-photo reference. Names include generations, regional badges and
 selected special-purpose versions; this is not an official model total or a
 count of distinct body designs.

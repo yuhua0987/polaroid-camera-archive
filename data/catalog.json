@@ -8,12 +8,12 @@
   "stats": {
     "models": 378,
     "families": 16,
-    "photo_references": 1207,
-    "referenced_images": 1206,
+    "photo_references": 1211,
+    "referenced_images": 1210,
     "models_with_references": 372,
     "missing_reference_models": 6,
-    "bundled_images": 151,
-    "models_with_bundled_images": 57
+    "bundled_images": 155,
+    "models_with_bundled_images": 60
   },
   "models": [
     {
@@ -8395,6 +8395,42 @@
           "thumb": null,
           "distribution": "reference-only",
           "license_url": null
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Polaroid_SX-70_%284462345243%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Polaroid_SX-70_%284462345243%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Polaroid_SX-70_(4462345243).jpg",
+          "license": "CC0",
+          "width": 1024,
+          "height": 972,
+          "sha256": "bf4cbd8f461ab03ded5a095c018b3f1e71d03eaeb8e7451936280c461b7b8325",
+          "title": "File:Polaroid SX-70 (4462345243).jpg",
+          "credit": "Thomas Backa from Turku, Finland",
+          "label": "斜前方 · 展开",
+          "origin": "commons",
+          "collected_date": "2026-11-01",
+          "distribution": "bundled",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "path": "assets/media/bf4cbd8f461ab03ded5a095c018b3f1e71d03eaeb8e7451936280c461b7b8325.jpg",
+          "thumb": "assets/thumbs/bf4cbd8f461ab03ded5a095c018b3f1e71d03eaeb8e7451936280c461b7b8325.jpg"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Polaroid_instant_camera_Sx70-8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Polaroid_instant_camera_Sx70-8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Polaroid_instant_camera_Sx70-8.jpg",
+          "license": "Public domain",
+          "width": 300,
+          "height": 266,
+          "sha256": "aa00b4c32b4701872e1dd38b10fb282a2d9b58093c14292b3ba7c79b2d6546a6",
+          "title": "File:Polaroid instant camera Sx70-8.jpg",
+          "credit": "Original uploader was Junkyard kahrs at en.wikipedia",
+          "label": "斜前方 · 收合",
+          "origin": "commons",
+          "collected_date": "2026-11-01",
+          "distribution": "bundled",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "path": "assets/media/aa00b4c32b4701872e1dd38b10fb282a2d9b58093c14292b3ba7c79b2d6546a6.jpg",
+          "thumb": "assets/thumbs/aa00b4c32b4701872e1dd38b10fb282a2d9b58093c14292b3ba7c79b2d6546a6.jpg"
         }
       ]
     },
@@ -8926,6 +8962,24 @@
           "thumb": null,
           "distribution": "reference-only",
           "license_url": null
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Polaroid_SX-70.jpg/1280px-Polaroid_SX-70.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Polaroid_SX-70.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Polaroid_SX-70.jpg",
+          "license": "CC BY-SA 3.0",
+          "width": 1280,
+          "height": 1532,
+          "sha256": "1adcd4c1e9c9f28391801022333ecbaa14e5c643d7d3526327d4b96083a65037",
+          "title": "File:Polaroid SX-70.jpg",
+          "credit": "en:User:Cburnett",
+          "label": "斜前方 · 展开",
+          "origin": "commons",
+          "collected_date": "2026-11-01",
+          "distribution": "bundled",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "path": "assets/media/1adcd4c1e9c9f28391801022333ecbaa14e5c643d7d3526327d4b96083a65037.jpg",
+          "thumb": "assets/thumbs/1adcd4c1e9c9f28391801022333ecbaa14e5c643d7d3526327d4b96083a65037.jpg"
         }
       ]
     },
@@ -9088,7 +9142,9 @@
       "note": "",
       "kind": "型号/命名版本",
       "source_year": "1978",
-      "views_recorded": [],
+      "views_recorded": [
+        "斜前方"
+      ],
       "strict_views_pending": [
         "正面",
         "侧面",
@@ -9190,6 +9246,24 @@
           "thumb": null,
           "distribution": "reference-only",
           "license_url": null
+        },
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Polaroid_SX-70_Sonar_One_Step_%284665242131%29.jpg/1280px-Polaroid_SX-70_Sonar_One_Step_%284665242131%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Polaroid_SX-70_Sonar_One_Step_%284665242131%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Polaroid_SX-70_Sonar_One_Step_(4665242131).jpg",
+          "license": "CC BY 2.0",
+          "width": 1280,
+          "height": 982,
+          "sha256": "dcfa0ed67fab94853e4e69ecabb131c3e30fdcc357fa6c39d529772e651e11ca",
+          "title": "File:Polaroid SX-70 Sonar One Step (4665242131).jpg",
+          "credit": "Martin Taylor from San Francisco, CA, USA",
+          "label": "斜前方 · 展开",
+          "origin": "commons",
+          "collected_date": "2026-11-01",
+          "distribution": "bundled",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "path": "assets/media/dcfa0ed67fab94853e4e69ecabb131c3e30fdcc357fa6c39d529772e651e11ca.jpg",
+          "thumb": "assets/thumbs/dcfa0ed67fab94853e4e69ecabb131c3e30fdcc357fa6c39d529772e651e11ca.jpg"
         }
       ]
     },
@@ -28250,5 +28324,6 @@
         }
       ]
     }
-  ]
+  ],
+  "public_media_updated": "2026-11-01"
 }

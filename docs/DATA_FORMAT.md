@@ -3,7 +3,7 @@
 `data/catalog.json` uses UTF-8 JSON, currently `schema_version: 1`.
 
 Top-level fields are `title`, `schema_version`, `data_date`, `publication_date`,
-`maintainer`, `scope`, `stats` and `models`.
+`maintainer`, `scope`, `stats` and `models`. `public_media_updated` records the date of licensed-image additions beyond the original research snapshot.
 Statistics distinguish photo **references** from unique referenced images and
 images actually **bundled** in the public repository.
 

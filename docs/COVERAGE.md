@@ -117,15 +117,15 @@ Angle labels describe all source references, including images not distributed he
 | [P111 · Swinger EE](../index.html#P111) | 撕拉片 80 系列 | 2 | 0 | 未标注 | 正面 / 侧面 / 背面 |
 | [P112 · Zip](../index.html#P112) | 撕拉片 80 系列 | 1 | 0 | 未标注 | 正面 / 侧面 / 背面 |
 | [P113 · Viva](../index.html#P113) | 撕拉片 80 系列 | 2 | 0 | 背面 | 正面 / 侧面 |
-| [P114 · SX-70](../index.html#P114) | SX-70 折叠机 | 21 | 0 | 正面 / 斜前方 / 侧面 / 背面 / 斜后方 / 收合 | 已标注 |
+| [P114 · SX-70](../index.html#P114) | SX-70 折叠机 | 23 | 2 | 正面 / 斜前方 / 侧面 / 背面 / 斜后方 / 收合 | 已标注 |
 | [P115 · SX-70 Alpha 1](../index.html#P115) | SX-70 折叠机 | 4 | 0 | 未标注 | 正面 / 侧面 / 背面 |
 | [P116 · SX-70 Alpha 1 Executive](../index.html#P116) | SX-70 折叠机 | 6 | 0 | 斜前方 / 斜后方 / 顶部 / 收合 | 正面 / 侧面 / 背面 |
 | [P117 · SX-70 Alpha 1 24 Kt Gold Mildred Scheel](../index.html#P117) | SX-70 折叠机 | 2 | 0 | 未标注 | 正面 / 侧面 / 背面 |
 | [P118 · SX-70 Alpha 1 Model 2](../index.html#P118) | SX-70 折叠机 | 6 | 0 | 未标注 | 正面 / 侧面 / 背面 |
 | [P119 · SX-70 Executive](../index.html#P119) | SX-70 折叠机 | 0 | 0 | 未标注 | 正面 / 侧面 / 背面 |
-| [P120 · SX-70 Model 2](../index.html#P120) | SX-70 折叠机 | 7 | 0 | 斜前方 / 背面 / 收合 | 正面 / 侧面 |
+| [P120 · SX-70 Model 2](../index.html#P120) | SX-70 折叠机 | 8 | 1 | 斜前方 / 背面 / 收合 | 正面 / 侧面 |
 | [P121 · SX-70 Model 3](../index.html#P121) | SX-70 折叠机 | 8 | 0 | 背面 | 正面 / 侧面 |
-| [P122 · SX-70 Sonar OneStep](../index.html#P122) | SX-70 折叠机 | 6 | 0 | 未标注 | 正面 / 侧面 / 背面 |
+| [P122 · SX-70 Sonar OneStep](../index.html#P122) | SX-70 折叠机 | 7 | 1 | 斜前方 | 正面 / 侧面 / 背面 |
 | [P123 · SX-70 Sonar OneStep Gold](../index.html#P123) | SX-70 折叠机 | 2 | 0 | 未标注 | 正面 / 侧面 / 背面 |
 | [P124 · TimeZero SX-70 AutoFocus](../index.html#P124) | SX-70 折叠机 | 2 | 0 | 背面 | 正面 / 侧面 |
 | [P125 · TimeZero SX-70 AutoFocus Model 2](../index.html#P125) | SX-70 折叠机 | 1 | 0 | 斜前方 | 正面 / 侧面 / 背面 |

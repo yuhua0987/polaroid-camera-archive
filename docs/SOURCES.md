@@ -40,3 +40,5 @@ aliases have been independently authenticated.
 
 Keep source attribution when reusing the catalog. Source links do not confer
 permission to copy the entire source page or its images.
+
+The public edition adds four openly licensed SX-70 / Model 2 / Sonar images on 2026-11-01. Their source metadata was checked separately; individual capture dates are preserved in the media manifest.

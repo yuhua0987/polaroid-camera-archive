@@ -26,7 +26,7 @@ def update():
     (ROOT / "docs/COVERAGE.md").write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
     lines = ["# Image attributions / 图片署名", "",
              "Each photograph and its preview retain the license below. Downloaded responses were not edited locally; previews were resized and composited onto white where needed. Source servers may have supplied resized versions. Public-domain records retain the source's stated status.", "",
-             f"**{len(media)} images.** License metadata was captured on {d['data_date']}. Original file pages include further attribution information.", ""]
+             f"**{len(media)} images.** License capture dates are recorded per image in the media manifest. Original file pages include further attribution information.", ""]
     for a in sorted(media, key=lambda item: item["sha256"]):
         title = text(a["title"].removeprefix("File:"))
         lines += [f"## {a['sha256'][:16]}", "",

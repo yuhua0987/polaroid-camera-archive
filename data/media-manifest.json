@@ -1,5 +1,5 @@
 {
-  "metadata_date": "2026-10-31",
+  "metadata_date": "2026-11-01",
   "policy": "Only explicitly licensed Commons images with matching saved license metadata are bundled. Other entries are source references only.",
   "images": [
     {
@@ -2822,6 +2822,88 @@
       "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
       "copyrighted": "True",
       "retrieved_date": "2026-10-31",
+      "changes": "Downloaded response preserved; source may already be resized. Preview resized and composited onto white where needed."
+    },
+    {
+      "path": "assets/media/1adcd4c1e9c9f28391801022333ecbaa14e5c643d7d3526327d4b96083a65037.jpg",
+      "thumb": "assets/thumbs/1adcd4c1e9c9f28391801022333ecbaa14e5c643d7d3526327d4b96083a65037.jpg",
+      "sha256": "1adcd4c1e9c9f28391801022333ecbaa14e5c643d7d3526327d4b96083a65037",
+      "thumbnail_sha256": "6f1cf98e8d55b0f4d69df08d661e1593de7cbbd7497540eda0389a672b090bac",
+      "title": "File:Polaroid SX-70.jpg",
+      "author": "en:User:Cburnett",
+      "author_urls": [
+        "https://en.wikipedia.org/wiki/User:Cburnett"
+      ],
+      "source": "https://commons.wikimedia.org/wiki/File:Polaroid_SX-70.jpg",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution_required": "true",
+      "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+      "copyrighted": "True",
+      "retrieved_date": "2026-11-01",
+      "changes": "Downloaded response preserved; source may already be resized. Preview resized and composited onto white where needed."
+    },
+    {
+      "path": "assets/media/bf4cbd8f461ab03ded5a095c018b3f1e71d03eaeb8e7451936280c461b7b8325.jpg",
+      "thumb": "assets/thumbs/bf4cbd8f461ab03ded5a095c018b3f1e71d03eaeb8e7451936280c461b7b8325.jpg",
+      "sha256": "bf4cbd8f461ab03ded5a095c018b3f1e71d03eaeb8e7451936280c461b7b8325",
+      "thumbnail_sha256": "ed9f32aae7152ef58793e43afbc63bb4d269a3cc7b3b9f5e0cb007d4f45515fb",
+      "title": "File:Polaroid SX-70 (4462345243).jpg",
+      "author": "Thomas Backa from Turku, Finland",
+      "author_urls": [
+        "https://www.flickr.com/people/76297116@N00"
+      ],
+      "source": "https://commons.wikimedia.org/wiki/File:Polaroid_SX-70_(4462345243).jpg",
+      "license": "CC0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "attribution_required": "false",
+      "usage_terms": "Creative Commons Zero, Public Domain Dedication",
+      "copyrighted": "True",
+      "retrieved_date": "2026-11-01",
+      "changes": "Downloaded response preserved; source may already be resized. Preview resized and composited onto white where needed."
+    },
+    {
+      "path": "assets/media/dcfa0ed67fab94853e4e69ecabb131c3e30fdcc357fa6c39d529772e651e11ca.jpg",
+      "thumb": "assets/thumbs/dcfa0ed67fab94853e4e69ecabb131c3e30fdcc357fa6c39d529772e651e11ca.jpg",
+      "sha256": "dcfa0ed67fab94853e4e69ecabb131c3e30fdcc357fa6c39d529772e651e11ca",
+      "thumbnail_sha256": "1ff8c5e76068b2d199e747829428d2ebc784aa86698ed0757ee37b14cb9d8c46",
+      "title": "File:Polaroid SX-70 Sonar One Step (4665242131).jpg",
+      "author": "Martin Taylor from San Francisco, CA, USA",
+      "author_urls": [
+        "https://www.flickr.com/people/25308556@N00"
+      ],
+      "source": "https://commons.wikimedia.org/wiki/File:Polaroid_SX-70_Sonar_One_Step_(4665242131).jpg",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source_license_url": "https://creativecommons.org/licenses/by/2.0",
+      "attribution_required": "true",
+      "usage_terms": "Creative Commons Attribution 2.0",
+      "copyrighted": "True",
+      "retrieved_date": "2026-11-01",
+      "changes": "Downloaded response preserved; source may already be resized. Preview resized and composited onto white where needed."
+    },
+    {
+      "path": "assets/media/aa00b4c32b4701872e1dd38b10fb282a2d9b58093c14292b3ba7c79b2d6546a6.jpg",
+      "thumb": "assets/thumbs/aa00b4c32b4701872e1dd38b10fb282a2d9b58093c14292b3ba7c79b2d6546a6.jpg",
+      "sha256": "aa00b4c32b4701872e1dd38b10fb282a2d9b58093c14292b3ba7c79b2d6546a6",
+      "thumbnail_sha256": "7c10dda8a2334513c5a2dd2b8c491ebc88ad4ee990e933d3d7204e7bb62d685a",
+      "title": "File:Polaroid instant camera Sx70-8.jpg",
+      "author": "Original uploader was Junkyard kahrs at en.wikipedia",
+      "author_urls": [
+        "https://en.wikipedia.org/wiki/User:Junkyard_kahrs",
+        "http://en.wikipedia.org",
+        "https://en.wikipedia.org"
+      ],
+      "source": "https://commons.wikimedia.org/wiki/File:Polaroid_instant_camera_Sx70-8.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_license_url": "https://commons.wikimedia.org/wiki/File:Polaroid_instant_camera_Sx70-8.jpg",
+      "attribution_required": "false",
+      "usage_terms": "Public domain",
+      "copyrighted": "False",
+      "retrieved_date": "2026-11-01",
       "changes": "Downloaded response preserved; source may already be resized. Preview resized and composited onto white where needed."
     }
   ]
