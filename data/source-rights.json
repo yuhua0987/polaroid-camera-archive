@@ -1,0 +1,26 @@
+{
+  "reviewed_date": "2026-11-01",
+  "scope": "Source-site terms review; individual image licenses and any separately obtained permissions take precedence. No private permission has been supplied for reference-only images.",
+  "sites": {
+    "retrospekt.com": {
+      "status": "written-permission-required",
+      "summary": "网站服务条款第2节要求事先取得书面许可后再复制其网站服务内容；本项目未取得图片再分发许可。",
+      "policy_url": "https://retrospekt.com/policies/terms-of-service"
+    },
+    "brooklynfilmcamera.com": {
+      "status": "written-permission-required",
+      "summary": "网站服务条款第2节要求事先取得 Brooklyn Film Camera 的书面许可后再复制其网站服务内容；本项目未取得图片再分发许可。",
+      "policy_url": "https://brooklynfilmcamera.com/policies/terms-of-service"
+    },
+    "filmphotography.eu": {
+      "status": "redistribution-not-confirmed",
+      "summary": "法律声明说明网站照片等内容受网站方或相关权利人的权利保护；未找到适用于这些图像的开放再分发许可。",
+      "policy_url": "https://filmphotography.eu/impressum/"
+    },
+    "commons.wikimedia.org": {
+      "status": "per-image-license",
+      "summary": "按每个文件页面的作者、许可和署名要求收录，具体条件见逐图许可清单。",
+      "policy_url": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia"
+    }
+  }
+}

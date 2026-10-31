@@ -28,6 +28,7 @@ images actually **bundled** in the public repository.
 | --- | --- |
 | `url`, `original_url` | Public source image URLs; they are references, not hosted copies |
 | `source` | Original source page |
+| `source_website`, `source_host` | Human-readable source website name and normalized domain, derived from `source` rather than the image CDN |
 | `credit`, `title` | Author / provider and supplied title, where available |
 | `label` | Actual angle or camera state; unknown views remain marked unknown |
 | `license`, `license_url` | Source's license statement; null URL for unverified references |
@@ -45,3 +46,9 @@ The UI must never put `url` or `original_url` into an automatically loaded image
 author links, exact source-license URLs, source usage terms, hashes, snapshot
 date and modification notices. A source-specific file license always takes
 precedence over the project's software or catalog-compilation license.
+
+`data/source-sites.json` groups every reference by source website, preserving
+record/model counts, bundled-versus-linked totals and the corresponding
+`docs/sources/` document. `data/source-rights.json` records dated source-site
+terms checks; these summaries do not override individual image licenses or
+separately obtained permissions.

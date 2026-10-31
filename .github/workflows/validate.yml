@@ -19,7 +19,7 @@ jobs:
       - name: Check generated documentation
         run: |
           python3 tools/update_docs.py
-          git diff --exit-code -- docs/COVERAGE.md docs/ATTRIBUTION.md
+          git diff --exit-code -- data/catalog.json data/source-sites.json docs/
       - name: Build static gallery
         run: python3 tools/build.py
       - name: Validate built output and committed offline page

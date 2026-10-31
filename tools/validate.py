@@ -56,6 +56,9 @@ def validate(site=None):
         for p in m["photos"]:
             photos.append(p)
             require(web_url(p["source"]) and web_url(p["url"]), f"Invalid photo source URL: {m['id']}")
+            require(not p.get("original_url") or web_url(p["original_url"]), "Invalid original image URL")
+            require(p.get("source_host") == (urlsplit(p["source"]).hostname or "").lower().removeprefix("www."), "Photo source website does not match its source URL")
+            require(bool(p.get("source_website")), "Missing photo source website label")
             require(re.fullmatch(r"[0-9a-f]{64}", p["sha256"]), "Invalid photo hash")
             require(p["width"] > 0 and p["height"] > 0, "Invalid photo dimensions")
             if p["distribution"] == "reference-only":
@@ -85,6 +88,14 @@ def validate(site=None):
         "models_with_bundled_images": sum(any(p["distribution"] == "bundled" for p in m["photos"]) for m in models),
     }
     require(stats == expected, "Catalog statistics are stale")
+    source_sites = json.loads((ROOT / "data/source-sites.json").read_text(encoding="utf-8"))["sites"]
+    require(sum(s["references"] for s in source_sites) == len(photos), "Source directory does not cover all photo references")
+    require({s["host"] for s in source_sites} == {p["source_host"] for p in photos}, "Source directory websites disagree with photo records")
+    for s in source_sites:
+        rows = [p for p in photos if p["source_host"] == s["host"]]
+        require(len(rows) == s["references"], "Source website reference count is stale")
+        require(sum(p["distribution"] == "bundled" for p in rows) == s["bundled"], "Source website bundled count is stale")
+        local_path(ROOT, s["document"])
     require(set(media) == included, "Unreferenced media manifest records")
     expected_files = {p[key] for p in media.values() for key in ("path", "thumb")}
     actual_files = {p.relative_to(ROOT).as_posix() for directory in ("assets/media", "assets/thumbs") for p in (ROOT / directory).rglob("*") if p.is_file()}

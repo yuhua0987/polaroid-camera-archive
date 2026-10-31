@@ -3,6 +3,7 @@
 
 import json
 from pathlib import Path
+from update_sources import update as update_sources
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -12,6 +13,7 @@ def text(value):
 
 
 def update():
+    update_sources()
     d = json.loads((ROOT / "data/catalog.json").read_text(encoding="utf-8"))
     media = json.loads((ROOT / "data/media-manifest.json").read_text(encoding="utf-8"))["images"]
     lines = ["# Model and angle coverage / 型号与视角覆盖", "",

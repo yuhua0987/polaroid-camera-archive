@@ -16,9 +16,16 @@ const pageSize = 36;
 const bundled = p => p.distribution === "bundled" && Boolean(p.path && p.thumb);
 const pending = m => ["正面", "侧面", "背面"].filter(name => !(m.views_recorded || []).includes(name));
 const localCount = m => m.photos.filter(bundled).length;
+const sourceCounts = new Map();
+for (const m of all) for (const p of m.photos) {
+  const entry = sourceCounts.get(p.source_host) || {name:p.source_website, count:0};
+  entry.count++;
+  sourceCounts.set(p.source_host, entry);
+}
+$("source").innerHTML = '<option value="">全部来源网站</option>' + [...sourceCounts].sort((a,b) => b[1].count-a[1].count || a[0].localeCompare(b[0])).map(([host, entry]) => `<option value="${esc(host)}">${esc(entry.name)} (${entry.count})</option>`).join("");
 
-function hero(m) {
-  const available = m.photos.filter(bundled);
+function hero(m, respectFilters = false) {
+  const available = m.photos.filter(p => bundled(p) && (!respectFilters || photoMatch(p)));
   return available.find(p => /^(正面|斜前方)/.test(p.label)) || available[0] || null;
 }
 
@@ -47,12 +54,13 @@ function angleMatch(p, angle) {
 
 function photoMatch(p) {
   const access = $("access").value;
-  return angleMatch(p, $("angle").value) && (access === "all" || (access === "bundled" ? bundled(p) : !bundled(p)));
+  const source = $("source").value;
+  return (!source || p.source_host === source) && angleMatch(p, $("angle").value) && (access === "all" || (access === "bundled" ? bundled(p) : !bundled(p)));
 }
 
 function filtered() {
   const q = $("search").value.trim().toLowerCase(), mode = $("mode").value;
-  const needsPhotoMatch = Boolean($("angle").value) || $("access").value !== "all";
+  const needsPhotoMatch = Boolean($("angle").value) || Boolean($("source").value) || $("access").value !== "all";
   return all.filter(m => (!family || family === m.family)
     && (!q || `${m.id} ${m.name} ${m.family}`.toLowerCase().includes(q))
     && (mode !== "missing" || !m.photos.length)
@@ -75,11 +83,11 @@ function render() {
   } else {
     $("results").innerHTML = '<div class="grid">' + subset.map(row => {
       const m = mode === "photos" ? row.m : row;
-      const p = mode === "photos" ? row.p : hero(m);
+      const p = mode === "photos" ? row.p : hero(m, true) || m.photos.find(photoMatch) || null;
       const i = mode === "photos" ? row.i : Math.max(0, m.photos.indexOf(p));
       const hasImage = p && bundled(p);
       const caption = mode === "photos" ? p.label : `${m.photos.length} 条参考 · ${localCount(m)} 张开放图片`;
-      return `<button class="card" data-model="${m.id}" data-index="${i}"><div class="cover">${hasImage ? `<img loading="lazy" src="${esc(p.thumb)}" alt="${esc(m.name + " · " + p.label)}">` : placeholder(m)}<span class="count">${esc(mode === "photos" ? hasImage ? "开放图片" : "来源链接" : m.photos.length + " 条参考")}</span></div><div class="cardbody"><div class="modelid">${m.id} / ${esc(m.family)}</div><h3>${esc(m.name)}</h3><div class="subtitle">${esc(caption)}</div></div></button>`;
+      return `<button class="card" data-model="${m.id}" data-index="${i}"><div class="cover">${hasImage ? `<img loading="lazy" src="${esc(p.thumb)}" alt="${esc(m.name + " · " + p.label)}">` : placeholder(m)}<span class="count">${esc(mode === "photos" ? hasImage ? "开放图片" : "来源链接" : m.photos.length + " 条参考")}</span></div><div class="cardbody"><div class="modelid">${m.id} / ${esc(m.family)}</div><h3>${esc(m.name)}</h3><div class="subtitle">${esc(caption)}</div>${p ? `<div class="source-caption">来源：${esc(p.source_website)}</div>` : ""}</div></button>`;
     }).join("") + '</div>';
   }
   $("pagination").innerHTML = rows.length > pageSize ? `<button id="prev" ${page <= 1 ? "disabled" : ""}>上一页</button><span>${page} / ${pages}</span><button id="next" ${page >= pages ? "disabled" : ""}>下一页</button>` : "";
@@ -101,6 +109,7 @@ function show(id, position = 0) {
 
 function showPhoto() {
   const m = active, p = m.photos[index];
+  const sourceImage = p && (p.original_url || p.url);
   $("thumbs").innerHTML = m.photos.map((item, i) => `<button class="thumb ${i === index ? "sel" : ""}" data-photo="${i}" aria-label="第${i + 1}条 · ${esc(item.label)}" title="${esc(item.label)}">${bundled(item) ? `<img loading="lazy" src="${esc(item.thumb)}" alt="${esc(item.label)}">` : `<span class="reference-tab">↗<small>来源 ${i + 1}</small></span>`}</button>`).join("");
   if (!p) {
     $("stage").innerHTML = '<div class="empty">尚未找到可核实的对应型号照片。</div>';
@@ -108,8 +117,8 @@ function showPhoto() {
     return;
   }
   const arrows = m.photos.length > 1 ? '<button class="navpic prevpic" id="prevpic" aria-label="上一张">‹</button><button class="navpic nextpic" id="nextpic" aria-label="下一张">›</button>' : "";
-  $("stage").innerHTML = (bundled(p) ? `<img src="${esc(p.path)}" alt="${esc(m.name + " · " + p.label)}">` : `<div class="reference-stage"><div class="reference-icon" aria-hidden="true">↗</div><h3>${esc(m.name)}</h3><p>${esc(p.label)}</p><p>此图保留在原始来源页，公开版提供链接参考。</p><a class="plain" href="${esc(p.source)}" target="_blank" rel="noopener noreferrer">查看来源网页 ↗</a></div>`) + arrows;
-  $("meta").innerHTML = `<div class="eyebrow">${index + 1} / ${m.photos.length} REFERENCES</div><h3>${esc(p.label)}</h3><dl><dt>收录方式</dt><dd>${bundled(p) ? "开放许可图片 · 可离线查看" : "来源链接 · 未复制图像"}</dd><dt>来源图像尺寸</dt><dd>${p.width} × ${p.height} px</dd><dt>作者 / 图片来源</dt><dd>${esc(p.credit)}</dd><dt>许可信息</dt><dd>${p.license_url ? `<a href="${esc(p.license_url)}" target="_blank" rel="noopener noreferrer">${esc(p.license)}</a>` : esc(p.license)}</dd></dl><div class="photolinks">${bundled(p) ? `<a href="${esc(p.path)}" target="_blank" rel="noopener">打开图片 ↗</a>` : ""}<a href="${esc(p.source)}" target="_blank" rel="noopener noreferrer">来源网页 ↗</a></div>${bundled(p) ? '<p class="origin">图像保留下载响应；缩略图经过缩放，透明区域使用白底。逐图署名与原许可随仓库保存。</p>' : ""}`;
+  $("stage").innerHTML = (bundled(p) ? `<img src="${esc(p.path)}" alt="${esc(m.name + " · " + p.label)}">` : `<div class="reference-stage"><div class="reference-icon" aria-hidden="true">↗</div><h3>${esc(m.name)}</h3><p>${esc(p.label)}</p><p>来源网站：${esc(p.source_website)}</p><p>此图保留在原始来源页，公开版提供链接参考。</p><div class="source-actions"><a class="plain" href="${esc(p.source)}" target="_blank" rel="noopener noreferrer">查看来源网页 ↗</a><a class="plain" href="${esc(sourceImage)}" target="_blank" rel="noopener noreferrer">打开来源原图 ↗</a></div></div>`) + arrows;
+  $("meta").innerHTML = `<div class="eyebrow">${index + 1} / ${m.photos.length} REFERENCES</div><h3>${esc(p.label)}</h3><dl><dt>收录方式</dt><dd>${bundled(p) ? "开放许可图片 · 可离线查看" : "来源链接 · 未复制图像"}</dd><dt>来源网站</dt><dd><a href="${esc(p.source)}" target="_blank" rel="noopener noreferrer">${esc(p.source_website)}</a><br><small>${esc(p.source_host)}</small></dd><dt>收集时图像尺寸</dt><dd>${p.width} × ${p.height} px</dd><dt>作者 / 图片来源</dt><dd>${esc(p.credit)}</dd><dt>许可信息</dt><dd>${p.license_url ? `<a href="${esc(p.license_url)}" target="_blank" rel="noopener noreferrer">${esc(p.license)}</a>` : esc(p.license)}</dd></dl><div class="photolinks">${bundled(p) ? `<a href="${esc(p.path)}" target="_blank" rel="noopener">打开图片 ↗</a>` : ""}<a href="${esc(p.source)}" target="_blank" rel="noopener noreferrer">来源网页 ↗</a><a href="${esc(sourceImage)}" target="_blank" rel="noopener noreferrer">来源原图 ↗</a></div>${bundled(p) ? '<p class="origin">图像保留下载响应；缩略图经过缩放，透明区域使用白底。逐图署名与原许可随仓库保存。</p>' : ""}`;
   if ($("prevpic")) $("prevpic").onclick = () => step(-1);
   if ($("nextpic")) $("nextpic").onclick = () => step(1);
 }
@@ -141,7 +150,7 @@ $("detail").addEventListener("click", e => {
   const rect = $("detail").getBoundingClientRect();
   if (e.clientX < rect.left || e.clientX > rect.right || e.clientY < rect.top || e.clientY > rect.bottom) $("detail").close();
 });
-for (const id of ["search", "mode", "angle", "access"]) $(id).addEventListener(id === "search" ? "input" : "change", () => { page = 1; render(); });
+for (const id of ["search", "mode", "angle", "access", "source"]) $(id).addEventListener(id === "search" ? "input" : "change", () => { page = 1; render(); });
 render();
 const hash = location.hash.slice(1);
 if (byid.has(hash)) show(hash);

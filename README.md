@@ -2,7 +2,7 @@
 
 **宝丽来历代相机目录：型号、外观、多角度参考与逐图来源。**
 
-[English](README.en.md) · [浏览方式](#浏览) · [型号与视角清单](docs/COVERAGE.md) · [图片署名](docs/ATTRIBUTION.md) · [许可说明](NOTICE.md)
+[English](README.en.md) · [浏览方式](#浏览) · [全部照片来源](docs/PHOTO_SOURCES.md) · [型号与视角清单](docs/COVERAGE.md) · [图片署名](docs/ATTRIBUTION.md) · [许可说明](NOTICE.md)
 
 从 1948 年的卷片 Land 到 SX-70、600、Spectra、Go 与现代 i-Type，
 这个项目把相机名称、地区铭牌、代际和外观参考整理成可搜索的静态图鉴。
@@ -41,6 +41,7 @@ python3 -m http.server 8000 --bind 127.0.0.1
 - 按系列、型号编号或名称搜索。
 - 按正面、斜前方、侧面、背面、斜后方及收合状态查看参考记录。
 - 筛选“含开放图片”或“来源链接”，区分仓库内图像和外部参考。
+- 按来源网站筛选，查看对应照片的原始页面和原图链接。
 - 查看每张图的作者、尺寸、来源与许可；详情内用左右方向键切换。
 - 查看缺图型号和仍待补齐、待核对的纯正 / 侧 / 背视角。
 
@@ -74,6 +75,16 @@ SLR 680 / 690 归入 600 胶片系列；专业撕拉片 **600 / 600 SE** 单独�
 **MIT 不覆盖第三方照片。** 缩略图进行了缩放与必要的白底合成；下载的图像响应保留原字节。
 完整边界见 [NOTICE.md](NOTICE.md)，原许可元数据见 [media-manifest.json](data/media-manifest.json)。
 
+### 其他照片在哪里
+
+[全部照片来源索引](docs/PHOTO_SOURCES.md)覆盖 **64 个来源网站、1,211 条图片参考**，
+包括其余 **1,056 条未复制到仓库的来源链接**。每条都列出型号、视角、作者或来源标注、
+原始页面、原图地址和许可状态。可以按 Retrospekt、Polaroid Madness、FilmPhotography.eu
+等网站查找，也可以在图鉴中选择“来源网站”后查看。
+
+来源链接不等于图片副本已上传。尚未取得再分发许可的商家、评测与官方图像继续留在原网站；
+许可核查记录见 [source-rights.json](data/source-rights.json)。
+
 ## 开发与构建
 
 Python **3.10+**；构建和校验仅使用标准库，不需要 npm、数据库或 API 密钥。
@@ -95,6 +106,9 @@ python3 tools/build.py --output .
 | `web/` | HTML 模板、样式与查看器源码 |
 | `data/catalog.json` | 型号、视角与来源索引 |
 | `data/media-manifest.json` | 随仓库图片的作者、许可、修改说明与哈希 |
+| `data/source-sites.json` | 全部来源网站的名称、记录数量与对应索引 |
+| `docs/PHOTO_SOURCES.md` | 所有照片参考的来源网站总表 |
+| `docs/sources/` | 按网站展开的逐条照片来源与原图链接 |
 | `assets/media/` | 可再分发的图片响应 |
 | `assets/thumbs/` | 遵循原图许可的预览图 |
 | `docs/COVERAGE.md` | 逐型号参考记录和视角缺口 |

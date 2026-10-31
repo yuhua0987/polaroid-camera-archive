@@ -3,7 +3,7 @@
 An independent, source-linked catalog of historical Polaroid instant cameras,
 maintained by [yuhua0987](https://github.com/yuhua0987).
 
-[中文说明](README.md) · [Model coverage](docs/COVERAGE.md) · [Image credits](docs/ATTRIBUTION.md)
+[中文说明](README.md) · [All photo sources](docs/PHOTO_SOURCES.md) · [Model coverage](docs/COVERAGE.md) · [Image credits](docs/ATTRIBUTION.md)
 
 The 2026-10-31 snapshot contains **378 catalog names / versions across 16 families**,
 **1,211 photo references** covering **1,210 distinct images**, and **155 bundled,
@@ -19,6 +19,13 @@ folded state are recorded separately; full three-view coverage is incomplete.
 Download and extract the repository, then open **index.html**. All bundled images,
 catalog data and viewer code work offline. Other records provide source-page
 links only; the viewer does not hotlink those images.
+
+The [complete source directory](docs/PHOTO_SOURCES.md) covers **64 websites and
+all 1,211 references**, including the **1,056 source-only records**. Each entry
+identifies the model, view, author/provider, source page, source image URL and
+license statement. The viewer also supports source-website filtering. Attribution
+does not replace redistribution permission; unapproved image copies remain on
+their original websites.
 
 To build or check the project, use Python 3.10+ with no third-party dependencies:
 

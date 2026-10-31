@@ -1,7 +1,10 @@
 # Changelog
 
-## Unreleased
+## 0.1.1 — 2026-11-01
 
+- Document all 1,211 photo references across 64 source websites, including the 1,056 source-only records, with author/provider credits, source pages and direct source-image links.
+- Add source website labels to cards/details and a website filter to the viewer.
+- Record dated terms checks for major image sources; retain unapproved image copies on their original websites.
 - Keep the MIT license text standard for GitHub detection; retain software/media scope boundaries in NOTICE.md.
 
 ## 0.1.0 — 2026-11-01
