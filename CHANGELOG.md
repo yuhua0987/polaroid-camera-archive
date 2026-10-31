@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Keep the MIT license text standard for GitHub detection; retain software/media scope boundaries in NOTICE.md.
+
 ## 0.1.0 — 2026-11-01
 
 - Publish the source-linked catalog: 378 names / versions in 16 historical families.

@@ -28,3 +28,12 @@ Counts distinguish catalog names from independent camera-body designs.
 If an attribution or model assignment is wrong, open an issue with the model ID,
 image source and supporting evidence. Corrections can update or remove the
 affected material without replacing unrelated records.
+
+## Software license scope
+
+this MIT license covers the original viewer and tooling in web/ and
+tools/, the HTML template, build configuration and project documentation,
+except third-party notices, image attributions and the catalog data.
+Catalog data and photographs have separate terms. See NOTICE.md,
+data/LICENSE.md and docs/ATTRIBUTION.md. This file does not relicense photos,
+source-site material, camera designs or trademarks.

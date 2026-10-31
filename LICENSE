@@ -19,10 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-Scope: this MIT license covers the original viewer and tooling in web/ and
-tools/, the HTML template, build configuration and project documentation,
-except third-party notices, image attributions and the catalog data.
-Catalog data and photographs have separate terms. See NOTICE.md,
-data/LICENSE.md and docs/ATTRIBUTION.md. This file does not relicense photos,
-source-site material, camera designs or trademarks.
