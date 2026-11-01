@@ -21,7 +21,7 @@ without downloading or installing anything.
 
 For offline use, download and extract the repository, then open **index.html**. All bundled images,
 catalog data and viewer code work offline. Other records provide source-page
-links only; the viewer does not hotlink those images.
+links and previews; the viewer loads external previews directly from the original websites and labels their sources; availability depends on those websites.
 
 The [complete source directory](docs/PHOTO_SOURCES.md) covers **64 websites and
 all 1,211 references**, including the **1,056 source-only records**. Each entry

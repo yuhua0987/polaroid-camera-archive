@@ -9,10 +9,10 @@ by Polaroid. Camera names and trademarks belong to their respective owners.
 | Original viewer, scripts and project documentation | [MIT](LICENSE), subject to the exclusions stated there |
 | Original catalog compilation and annotations | [CC BY-SA 4.0](data/LICENSE.md); retain linked sources |
 | Included photographs and thumbnails | Each image's recorded license; see [attributions](docs/ATTRIBUTION.md) |
-| Other image references | Source links only; no redistribution permission is claimed |
+| Other image references | External previews and source links; no redistribution permission is claimed |
 
 公开仓库只复制许可明确且保留署名的图片。商家、评测与官方产品图若未取得再分发许可，
-只保留来源索引。来源链接并不表示源站内容已采用本项目许可证；浏览器不会自动加载这类远程图片。
+保留来源索引并由访客浏览器直接请求外站预览，不在仓库复制图片。预览与来源链接并不表示源站内容已采用本项目许可证；加载情况取决于原站与访客网络。
 
 Downloaded image responses are preserved byte-for-byte. Some source servers
 already supplied resized images. Preview thumbnails were resized and, where
